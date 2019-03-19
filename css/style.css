@@ -1,0 +1,39 @@
+.card-body {
+    padding: .5rem;
+}
+.list-group-item {
+    padding: .75rem;
+}
+.card:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+.card-title:hover {
+    color: lightseagreen;
+}
+label#form_ {
+    font-size: 22px;
+}
+hr.new {
+  border-top: 1px solid grey;
+}
+#add-question {
+    border: 2px dashed grey;
+}
+.border-dashed-3 {
+    border:3px dashed grey
+}
+
+.btn.btn-light.btn-lg.border-dashed-3:hover{
+    opacity: 40%;
+}
+
+@media (max-width:425px){
+    .row{
+        flex-direction: column;
+    }
+    #signUpForm{
+        padding: 0;
+        
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Create Question</title>  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark text-light">
+    <div clas="left-top-bar">
+        <a class="text-light" href="javascript:history.back()">Back</a>
+    </div>
+    <div clas="left-top-bar">
+        <h2>Create Question</h2>
+    </div>
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->      
+    <div clas="right-top-bar">
+      <button type="button" class="btn btn-success" onclick="question()">Create</button>
+    </div>
+  </nav>
+
+  <!-- content -->
+  <div class="container">
+    <div class="row" style="margin:20px;">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <label id="form_">Question</label>
+            <input type="text" class="form-control form-control-lg" id="question">
+            <label id="form_">Right Answer</label>
+            <input type="text" class="form-control form-control-lg" id="answer"  placeholder="A/B/C/D">
+          </div>
+        </form>
+      </div>
+      <div class="col">
+        <label id="form_">Media</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label custom-file-label-lg" for="customFile">Choose file</label>
+          </div>
+      </div>
+    </div>
+    <div class="row" style="margin:20px;">
+      <div class="col">
+        <div class="form-group">
+          <label id="form_">Answer A</label>
+          <input type="text" class="form-control form-control-lg" id="a">
+          <label id="form_">Answer B</label>
+          <input type="text" class="form-control form-control-lg" id="b">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label id="form_">Answer C</label>
+          <input type="text" class="form-control form-control-lg" id="c">
+          <label id="form_">Answer D</label>
+          <input type="text" class="form-control form-control-lg" id="d">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of content -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
