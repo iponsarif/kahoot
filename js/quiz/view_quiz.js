@@ -25,7 +25,30 @@ $.ajax({
     url: `http://127.0.0.1:5000/quiz/getQuiz/${quiz_id}`,
     method: 'GET',
     success: function(result){
-        for (var i = 0; i < result['question-list'].length; i++){
+        var quiz = `
+            <h4><b>${result.title}</b></h4> 
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/card_image.jpg" alt="" style="width: 15rem;">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-info float-right" onclick="location.href='edit_quiz.html?id=${result.id}'">Edit Quiz</button>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <h4>Questions</h4>
+            <div class="row pb-4">
+                <div class="col">
+                    <ul class="list-group" id="questionList">          
+                    <!-- data question -->
+                                        
+                    </ul>
+                </div>
+            </div>
+        `
+        $('div#quizById').append(quiz)
+
+        for (var i = 0; i < result['question-list'].length; i++){            
             var question = `
             <li class="list-group-item d-flex flex-row align-items-center mb-3">
                 <span class="col-1 text-center no-gutters bg-dark text-white"><b>${i+1}</b></span>
