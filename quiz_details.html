@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Quiz List</title>
+  <title>Kahoot! | Quiz</title>  
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+  <!-- Navbar -->  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-1">
     <a class="navbar-brand" href="index.html">
       <img src="img/kahoot-logo.png" alt="Logo kahoot" width="100px;">
     </a>
@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link font-weight-bold text-body">Discover</a>
+          <a class="nav-link" href="quiz_list.html">Discover</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="my_quiz.html">My Quiz</a>
@@ -42,25 +42,41 @@
       </ul>
     </div>
   </nav>
-  <!-- End of navbar -->
-  <!-- Content -->
-  <div class="container">    
-    <ul class="list-group flex-row flex-wrap justify-content-center" id ="quizList">
-      <!-- kahoot card js-->
-    </ul>
-  </div>    
+  <!-- end of navbar -->
+  <!-- content -->
+  <div class="container-fluid mt-5 pt-3" id="quizById">    
+    <div class="row">      
+      <div class="col-4">
+        <div class="sticky-top sticky-offset" id="stickyQuiz">
+          
+        </div>
+      </div>
+        <div class="col">
+          <h4>Questions</h4>
+          <div class="row pb-4">
+            <div class="col">
+              <ul class="list-group" id="questionList">          
+              <!-- data question -->
+                                  
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+      
+  </div>
   <!-- End of content -->
 
-  <!-- <div id="footer"></div> -->
-  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
   <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-  <script src="js/quiz/quiz_list.js"></script>
+  <script src="js/quiz/quiz_details.js"></script>
+
 </body>
 </html>

@@ -3,7 +3,6 @@ var url = new URL(url_string);
 var quiz_id = Number(url.searchParams.get("id"));
 
 function updateQuiz(q_id){
-    var q_id = q_id
     var title_ = $('input#title').val()
     var category_ = $('input#category').val()
     var creator_id_ = $('input#creator_id').val()

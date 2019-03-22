@@ -28,6 +28,10 @@ hr.new {
     opacity: 40%;
 }
 
+.sticky-offset {
+    top: 65px;
+}
+
 @media (max-width:425px){
     .row{
         flex-direction: column;
