@@ -13,8 +13,8 @@ function createGame(q_id){
             quiz_id: q_id
         }),
         success: function(response){            
-            window.location.href = `play.html?pin=${response['game-pin']}`
-            console.log(response['game-pin'])
+            window.location.href = `play.html?game_pin=${response['game-pin']}`
+            var game_pin = response['game-pin']
         },
         error: function(){
             

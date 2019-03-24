@@ -32,6 +32,13 @@ hr.new {
     top: 65px;
 }
 
+/* format text for options in play_game */
+.shad {
+    text-shadow: 1px 1px black;
+    color: white;
+    font-size: 1.75rem;
+}
+
 @media (max-width:425px){
     .row{
         flex-direction: column;

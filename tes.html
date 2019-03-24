@@ -1,81 +1,106 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            Sidebar
-            <div class="sticky-top sticky-offset">
-                <ul class="list-group">
-                    <li class="list-group-item active">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Play Kahoot!</title>
+</head>
+<body class="bg-light">
+  <!-- <script>
+    $('.carousel').carousel({
+      interval: false
+    })  
+  </script> -->
+  <!-- Navbar -->
+  
+  <!-- end of navbar -->
+
+  <!-- Content -->
+  <div class="container-fluid">
+    <div class="bd-example">
+      <div id="carouselQuestion" class="carousel slide carousel-fade" style="height: 550px;" data-ride="carousel" data-interval="false" data-wrap="false">
+        <ol class="carousel-indicators fixed-bottom m-0 bg-dark" id="question-indicator">
+          <li data-target="#carouselQuestion" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselQuestion" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" id="question-list">
+          <div class="carousel-item active">
+            <nav class="fixed-top navbar navbar-expand-lg bg-white d-flex justify-content-center" style="border-bottom:3px #dee2e6 solid">
+              <p class="text-center mb-0" style="font-size:45px;" id="question">
+                Are you ready?
+              </p>
+            </nav>
+            <div class="row ml-0 mr-0 mt-5 pt-5 font-weight-bold" id="question-counter">1 of 10</div>
+            <div class="row justify-content-center">
+              <img src="img/question.jpg" class="d-block w-30 pb-2" alt="qeustion-image">
             </div>
+            
+          </div>
+          <div class="carousel-item">
+            <nav class="fixed-top navbar navbar-expand-lg bg-white d-flex justify-content-center" style="border-bottom:3px #dee2e6 solid">
+              <p class="text-center mb-0" style="font-size:45px;" id="question">
+                question 2
+              </p>
+            </nav>
+            <div class="row ml-0 mr-0 mt-5 pt-5 font-weight-bold" id="question-counter">2 of 10</div>
+            <div class="row justify-content-center">
+              <img src="img/question.jpg" class="d-block w-30 pb-2" alt="question-image">
+            </div>
+            <div class="row">
+              <div class="col pl-1 pr-1">
+                <button type="button" class="btn btn-danger mb-2 d-flex w-100" style="height: 80px;">
+                  <div class="col-2 shad"><b>A</b></div>
+                  <div class="col shad text-left">option AAAAA</div>
+                </button>
+              </div>
+              <div class="col pl-1 pr-1">
+                <button type="button" class="btn btn-primary d-flex w-100" style="height: 80px;">
+                  <div class="col-2 shad"><b>B</b></div>
+                  <div class="col shad text-left">option BBBBB</div>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col pl-1 pr-1">
+                <button type="button" class="btn btn-warning mb-2 d-flex w-100" style="height: 80px;">
+                  <div class="col-2 shad"><b>C</b></div>
+                  <div class="col shad text-left">option CCCCC</div>
+                </button>
+              </div>
+              <div class="col pl-1 pr-1">
+                <button type="button" class="btn btn-success d-flex w-100" style="height: 80px;">
+                  <div class="col-2 shad"><b>D</b></div>
+                  <div class="col shad text-left">option DDDDD</div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col">Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>Very long main content
-            <br>
-        </div>
+        <a class="carousel-control-next d-flex align-items-start" style="height: 50px;" href="#carouselQuestion" role="button" data-slide="next">
+          <button type="button" class="btn btn-info d-flex shadow" style="margin-top:100px">Next</button>
+        </a>
+      </div>
     </div>
-</div>
+  </div>
+  <!-- End of content -->
+
+  <!-- footer -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="js/game/play_question.js"></script>
+
+</body>
+</html>

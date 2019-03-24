@@ -9,22 +9,39 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Play Kahoot! - Enter game PIN</title>
+  <title>Play Kahoot!</title>
 </head>
-<body class="bg-info">
-  <div class="container align-items-center">
-    <div class="row justify-content-center h-auto">      
-      <form style="width: 250px; margin-top: 150px;">
-        <img src="img/kahoot-logo-white.svg" class="mb-4" alt="logo kahoot" width="250rem">
-        <div class="form-group">
-          <input type="text" class="form-control form-control-lg font-weight-bold text-center" id="game-pin" placeholder="Game PIN">
-          <button type="button" class="btn btn-lg btn-dark font-weight-bold mt-2" style="width: -webkit-fill-available;" onclick="enterGamePIN()">Enter</button>
+<body class="bg-light">
+  <!-- <script>
+    $('.carousel').carousel({
+      interval: false
+    })  
+  </script> -->
+  <!-- Navbar -->
+  
+  <!-- end of navbar -->
+
+  <!-- Content -->
+  <div class="container-fluid">
+    <div class="bd-example">
+      <div id="carouselQuestion" class="carousel slide carousel-fade" style="height: 550px;" data-ride="carousel" data-interval="false" data-wrap="false">
+        <ol class="carousel-indicators fixed-bottom m-0 bg-dark" id="question-indicator">
+
+        </ol>
+        <div class="carousel-inner" id="question-list">
+
         </div>
-        
-      </form>
+        <a class="carousel-control-next d-flex align-items-start" style="height: 50px;" href="#carouselQuestion" role="button" data-slide="next">
+          <button type="button" class="btn btn-info d-flex shadow" style="margin-top:100px">Next</button>
+        </a>
+      </div>
     </div>
   </div>
-    <!-- Optional JavaScript -->
+  <!-- End of content -->
+
+  <!-- footer -->
+
+  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -32,7 +49,7 @@
   
   <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-  <script src="js/game/play.js"></script>
+  <script src="js/game/play_questions.js"></script>
 
 </body>
 </html>

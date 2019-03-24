@@ -9,15 +9,25 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Kahoot! | Quiz</title>  
+  <title>Play Kahoot!</title>
 </head>
 <body class="bg-info">
-  <!-- Navbar -->  
+  <script>
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var game_pin_ = Number(url.searchParams.get("game_pin"));
+    window.onload = function(){
+        document.getElementById('game-pin').innerHTML = game_pin_;
+  };  
+  </script>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white mb-4 pb-4 d-flex justify-content-center">
-    <p class="text-center mb-0" style="font-size:45px;">Join at <b>kahoot.it</b> with Game PIN: <b>389541</b></p>
+    <p class="text-center mb-0" style="font-size:45px;">
+      Join at <b>kahoot.it</b> with Game PIN: <b id="game-pin"></b>
+    </p>
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
   </nav>
-    <!-- end of navbar -->
+  <!-- end of navbar -->
 
   <!-- Content -->
   <div class="container-fluid">
@@ -38,7 +48,7 @@
         <img src="img/kahoot-logo-white.svg" alt="" width="210rem">
       </div>
       <div class="col d-flex align-items-center justify-content-end">
-        <button type="button" class="btn btn-light font-weight-bold" style="font-size:25px;" onclick="">Start</button>
+        <button type="button" class="btn btn-light font-weight-bold" style="font-size:25px;" onclick="playQuestions()">Start</button>
       </div>
     </div>
   </div>
