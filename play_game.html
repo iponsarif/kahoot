@@ -11,20 +11,54 @@
 
   <title>Play Kahoot!</title>
 </head>
-<body class="bg-info">
-  <div class="container align-items-center">
-    <div class="row justify-content-center h-auto">      
-      <form style="width: 250px; margin-top: 150px;">
-        <img src="img/kahoot-logo-white.svg" class="mb-4" alt="logo kahoot" width="250rem">
-        <div class="form-group">
-          <input type="text" class="form-control form-control-lg font-weight-bold text-center" id="username" aria-describedby="emailHelp" placeholder="Let's play">
-          <button type="submit" class="btn btn-lg btn-dark font-weight-bold mt-2" style="width: -webkit-fill-available" onclick="joinGamePIN()">THE GAME</button>
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white justify-content-between mb-2" style="border-bottom:3px #dee2e6 solid">
+    <h4 class="mb-0" id="game-pin">PIN:</h4>
+  </nav>
+  <!-- end of navbar -->
+
+  <!-- Content -->
+  <div class="container-fluid">
+    <div id="options">
+      <div class="row flex-row">
+        <div class="col pl-1 pr-1">
+          <button type="button" class="btn btn-danger mb-2 d-flex w-100 shad justify-content-center" style="height: 80px;" onclick="answer()" id="answer_" value="a">
+            <b>A</b>
+          </button>
         </div>
-        
-      </form>
+        <div class="col pl-1 pr-1">
+          <button type="button" class="btn btn-primary mb-2 d-flex w-100 shad justify-content-center" style="height: 80px;" onclick="">
+            <b>B</b>
+          </button>
+        </div>
+      </div>
+      <div class="row flex-row">
+        <div class="col pl-1 pr-1">
+          <button type="button" class="btn btn-warning mb-2 d-flex w-100 shad justify-content-center" style="height: 80px;" onclick="">
+            <b>C</b>
+          </button>
+        </div>
+        <div class="col pl-1 pr-1">
+          <button type="button" class="btn btn-success mb-2 d-flex w-100 shad justify-content-center" style="height: 80px;" onclick="">
+            <b>D</b>
+          </button>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
-    <!-- Optional JavaScript -->
+  <!-- End of content -->
+  
+  <!-- hidden -->
+  <div class="fixed-bottom" id="hidden_question_id"></div>
+  <!-- footer -->  
+  <nav class="fixed-bottom navbar navbar-expand-lg bg-white justify-content-between" style="border-top:3px #dee2e6 solid">
+    <h4 class="mb-0" id="username"></h4>
+    <button type="button" class="btn btn-dark font-weight-bold p-0" style="font-size:20px; width: 90px; height: 30px;" id="score"></button>
+  </nav>
+
+  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -32,7 +66,7 @@
   
   <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-  <script src="js/game/play.js"></script>
+  <script src="js/game/play_game.js"></script>
 
 </body>
 </html>

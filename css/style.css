@@ -38,6 +38,12 @@ hr.new {
     color: white;
     font-size: 1.75rem;
 }
+.shad2 {
+    text-shadow: 1px 1px black;
+    color: white;
+    font-size: 1.75rem;
+    text-align: center;
+}
 
 @media (max-width:425px){
     .row{
