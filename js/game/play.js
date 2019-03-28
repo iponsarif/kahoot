@@ -16,10 +16,10 @@ function joinGamePIN(){
         contentType: 'application/json',
         data: JSON.stringify({
             game_pin: game_pin_,
-            username: username_            
+            username: username_
         }),
         success: function(){            
-            window.location.href = `play_game.html?game_pin=${game_pin_}&username=${username_}`
+            window.location.href = `play_game.html?game_pin=${game_pin_}&username=${username_}&no=1`
             // console.log(username_)
         },
         error: function(){
